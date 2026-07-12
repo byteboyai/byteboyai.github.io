@@ -69,3 +69,21 @@ Byteboy is committed to building open, extensible, and developer-friendly softwa
 We welcome ideas, discussions, issues, and contributions from developers around the world.
 
 Together, let’s build the next generation of AI development tools.
+
+---
+
+## Website Development
+
+This repo also hosts the byteboy.ai landing page (GitHub Pages).
+
+- `src/` — the static site (plain HTML/CSS/JS, no build step)
+- `design/` — design source files (Figma reference assets)
+- `.github/workflows/deploy.yml` — deploys `src/` to Pages on push to `main`
+
+Local preview:
+
+```bash
+python3 -m http.server 8000 -d src
+```
+
+One-time setup: repo **Settings → Pages → Source: GitHub Actions**.
