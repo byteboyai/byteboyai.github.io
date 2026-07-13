@@ -197,7 +197,11 @@ img.pixelated, .card__art, .nav__burger { image-rendering: pixelated; }
 
 /* ============ HERO ============ */
 
-.hero-wrap { width: 100%; max-width: 1210px; }
+.hero-wrap { width: 100%; max-width: 1210px; position: relative; }
+
+/* scroll-lag engine trails: ghost copies of a panel's chamfered shape,
+   driven by main.js while the page scrolls */
+.panel-trail { position: absolute; pointer-events: none; opacity: 0; will-change: transform, opacity; }
 
 .panel--hero .panel__inner { display: flex; flex-direction: column; align-items: center;
   gap: 28px; padding: 44px 96px 48px; }
@@ -238,7 +242,7 @@ img.pixelated, .card__art, .nav__burger { image-rendering: pixelated; }
 
 /* ============ CORE MODULES ============ */
 
-.modules { display: flex; gap: 28px; width: 100%; max-width: 1210px; align-items: stretch; }
+.modules { display: flex; gap: 28px; width: 100%; max-width: 1210px; align-items: stretch; position: relative; }
 .modules .panel--card { flex: 1 0 0; min-width: 0; }
 
 .card { display: flex; flex-direction: column; align-items: flex-start; gap: 18px;
