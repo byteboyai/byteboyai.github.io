@@ -5,29 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BYTEBOY — Building the next generation of AI developer tools</title>
   <meta name="description" content="Byteboy is an independent open-source project focused on building native AI tools for developers.">
+  <meta name="theme-color" content="#0a0e16">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://byteboy.ai/">
+  <meta property="og:title" content="BYTEBOY — Building the next generation of AI developer tools">
+  <meta property="og:description" content="Byteboy is an independent open-source project focused on building native AI tools for developers.">
+  <meta property="og:image" content="https://byteboy.ai/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Chakra+Petch:wght@400&family=Press+Start+2P&family=VT323&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/orbitron-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/chakra-petch-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/jetbrains-mono-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/press-start-2p-latin.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/vt323-latin.woff2" crossorigin>
+  <link rel="preload" as="image" href="assets/bg-desktop.webp" media="(min-width: 769px)">
+  <link rel="preload" as="image" href="assets/bg-mobile.webp" media="(max-width: 768px)">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- shared SVG defs (stroke inherited from CSS via --hud-c) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="card-corner-accents" viewBox="0 0 28 28"><path d="M0 0l28 28M9 0l19 19" fill="none" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round"/></symbol>
+  </svg>
+
   <!-- ============ NAV ============ -->
   <header class="nav">
     <div class="nav__brand">
-      <img class="nav__logo" src="assets/logo.png" alt="Byteboy logo">
+      <img class="nav__logo" src="assets/logo.webp" alt="Byteboy logo" width="512" height="512">
       <span class="nav__wordmark-wrap">
-        <img class="nav__wordmark" src="assets/wordmark.svg" alt="BYTEBOY">
+        <img class="nav__wordmark" src="assets/wordmark.svg" alt="BYTEBOY" width="228" height="30">
       </span>
-      <span class="nav__version">v2.077</span>
+      <span class="nav__version" aria-hidden="true">v2.077</span>
     </div>
 
     <nav class="nav__links" id="navLinks">
       <a href="#home">HOME</a>
-      <span class="nav__sep">//</span>
+      <span class="nav__sep" aria-hidden="true">//</span>
       <a href="#product">PRODUCT</a>
-      <span class="nav__sep">//</span>
+      <span class="nav__sep" aria-hidden="true">//</span>
       <a href="#about">ABOUT</a>
       <div class="nav__menu-actions">
         <a href="https://github.com/byteboyai" aria-label="GitHub" class="icon-link"></a>
@@ -54,14 +72,14 @@
   </header>
 
   <!-- ============ BODY ============ -->
-  <div class="page-body" id="home">
+  <main class="page-body" id="home">
 
     <!-- HERO -->
     <section class="hero-wrap" id="about">
       <div class="panel panel--hero">
         <i class="spin-light" aria-hidden="true"></i>
         <div class="panel__inner">
-          <div class="badge">
+          <div class="badge" aria-hidden="true">
             <span class="badge__dot"></span>
             <span class="badge__text">[SYSTEM_STATUS: ONLINE]</span>
           </div>
@@ -74,10 +92,10 @@
           <i class="br br--br hero-br-br" aria-hidden="true"></i>
           <i class="cross hero-cross-bl" aria-hidden="true"></i>
           <i class="cross hero-cross-tr" aria-hidden="true"></i>
-          <svg class="hero-chevrons" width="79" height="12" viewBox="0 0 79 12" aria-hidden="true"><path d="M0 0l7 6-7 6M12 0l7 6-7 6M24 0l7 6-7 6M36 0l7 6-7 6M48 0l7 6-7 6M60 0l7 6-7 6M72 0l7 6-7 6" fill="none" stroke="#47DEF0" stroke-opacity=".75" stroke-width="2"/></svg>
-          <svg class="corner-accents hero-corner" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><path d="M0 0l44 44M12 0l32 32" fill="none" stroke="#47DEF0" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/></svg>
-          <span class="hud-label hero-label-core">//: BYTEBOY.CORE_v2.077</span>
-          <span class="hud-label hud-label--pink hero-label-node">NODE:0x3F7A <span class="blink">▮</span></span>
+          <svg class="hero-chevrons" width="79" height="12" viewBox="0 0 79 12" aria-hidden="true"><path d="M0 0l7 6-7 6M12 0l7 6-7 6M24 0l7 6-7 6M36 0l7 6-7 6M48 0l7 6-7 6M60 0l7 6-7 6M72 0l7 6-7 6" fill="none" stroke-opacity=".75" stroke-width="2"/></svg>
+          <svg class="corner-accents hero-corner" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><path d="M0 0l44 44M12 0l32 32" fill="none" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="hud-label hero-label-core" aria-hidden="true">//: BYTEBOY.CORE_v2.077</span>
+          <span class="hud-label hud-label--pink hero-label-node" aria-hidden="true">NODE:0x3F7A <span class="blink">▮</span></span>
           <i class="inner-line inner-line--left" aria-hidden="true"></i>
           <i class="inner-line inner-line--right" aria-hidden="true"></i>
         </div>
@@ -90,13 +108,13 @@
       <article class="panel panel--card">
         <i class="spin-light" aria-hidden="true"></i>
         <div class="panel__inner card">
-          <img class="card__art" src="assets/dozer.png" alt="">
+          <img class="card__art" src="assets/dozer.png" alt="" width="288" height="168">
           <h2 class="card__title">Dozer</h2>
-          <div class="card__status" style="--status:#62e9f2">STATUS: ACTIVE</div>
+          <div class="card__status card__status--active">STATUS: ACTIVE</div>
           <p class="card__desc">The AI Workspace for Builders. A native workspace designed for the agent era. Orchestrates agents, terminals, and resources.</p>
           <i class="br br--tl card-br" aria-hidden="true"></i>
-          <span class="hud-label card-mod">MOD_01</span>
-          <svg class="corner-accents card-corner" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M0 0l28 28M9 0l19 19" fill="none" stroke="#47DEF0" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span class="hud-label card-mod" aria-hidden="true">MOD_01</span>
+          <svg class="corner-accents card-corner" width="28" height="28" aria-hidden="true"><use href="#card-corner-accents"/></svg>
           <div class="cells" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
         </div>
       </article>
@@ -104,13 +122,13 @@
       <article class="panel panel--card">
         <i class="spin-light" aria-hidden="true"></i>
         <div class="panel__inner card">
-          <img class="card__art" src="assets/digger.png" alt="">
+          <img class="card__art" src="assets/digger.png" alt="" width="288" height="240">
           <h2 class="card__title">Digger</h2>
-          <div class="card__status" style="--status:#ff3dcc">STATUS: IN_DEV</div>
+          <div class="card__status card__status--indev">STATUS: IN_DEV</div>
           <p class="card__desc">An AI-powered research workspace for collecting, organizing, and understanding technical knowledge.</p>
           <i class="br br--tl card-br" aria-hidden="true"></i>
-          <span class="hud-label card-mod">MOD_02</span>
-          <svg class="corner-accents card-corner" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M0 0l28 28M9 0l19 19" fill="none" stroke="#47DEF0" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span class="hud-label card-mod" aria-hidden="true">MOD_02</span>
+          <svg class="corner-accents card-corner" width="28" height="28" aria-hidden="true"><use href="#card-corner-accents"/></svg>
           <div class="cells" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
         </div>
       </article>
@@ -118,32 +136,32 @@
       <article class="panel panel--card">
         <i class="spin-light" aria-hidden="true"></i>
         <div class="panel__inner card">
-          <img class="card__art" src="assets/truck.png" alt="">
+          <img class="card__art" src="assets/truck.png" alt="" width="288" height="138">
           <h2 class="card__title">Truck</h2>
-          <div class="card__status" style="--status:#f2d94e">STATUS: PLANNING</div>
+          <div class="card__status card__status--planning">STATUS: PLANNING</div>
           <p class="card__desc">An automation workspace for AI workflows, long-running tasks, and multi-agent orchestration.</p>
           <i class="br br--tl card-br" aria-hidden="true"></i>
-          <span class="hud-label card-mod">MOD_03</span>
-          <svg class="corner-accents card-corner" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true"><path d="M0 0l28 28M9 0l19 19" fill="none" stroke="#47DEF0" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <span class="hud-label card-mod" aria-hidden="true">MOD_03</span>
+          <svg class="corner-accents card-corner" width="28" height="28" aria-hidden="true"><use href="#card-corner-accents"/></svg>
           <div class="cells" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
         </div>
       </article>
 
     </section>
-  </div>
+  </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div class="footer__brand">
-      <img class="footer__wordmark" src="assets/wordmark.svg" alt="BYTEBOY">
+      <img class="footer__wordmark" src="assets/wordmark.svg" alt="BYTEBOY" width="228" height="30">
       <p class="footer__copy">BYTEBOY.AI ORCHESTRATION UNIT.<br>© 2026 ALL RIGHTS RESERVED.</p>
-      <div class="footer__log">
+      <div class="footer__log" aria-hidden="true">
         <p class="log--yellow">&gt; SYS_STATUS: [OK] <span class="blink">▮</span></p>
         <p class="log--cyan">&gt; UPLINK: SECURE // NODE: 0x3F7A // PING: 12ms</p>
       </div>
     </div>
 
-    <div class="footer__bust"><img src="assets/logo.png" alt=""></div>
+    <div class="footer__bust"><img src="assets/logo.webp" alt="" width="512" height="512"></div>
 
     <svg class="footer__accent" width="240" height="11" viewBox="0 0 240 11" aria-hidden="true"><path d="M0 1.5 L220 1.5 L240 9.5" fill="none" stroke="#47DEF0" stroke-width="3"/></svg>
     <svg class="footer__barcode" width="62" height="18" viewBox="0 0 62 18" aria-hidden="true" fill="#47DEF0" fill-opacity=".45"><rect width="3" height="18"/><rect x="5" width="1" height="18"/><rect x="8" width="2" height="18"/><rect x="12" width="1" height="18"/><rect x="15" width="4" height="18"/><rect x="21" width="1" height="18"/><rect x="24" width="1" height="18"/><rect x="27" width="2" height="18"/><rect x="31" width="3" height="18"/><rect x="36" width="1" height="18"/><rect x="39" width="2" height="18"/><rect x="43" width="4" height="18"/><rect x="49" width="1" height="18"/><rect x="52" width="1" height="18"/><rect x="55" width="3" height="18"/><rect x="60" width="2" height="18"/></svg>
