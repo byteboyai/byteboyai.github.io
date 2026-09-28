@@ -288,6 +288,14 @@ body {
 /* blog list: cards are links, keep them visually identical */
 a.panel--card { display: block; text-decoration: none; color: inherit; }
 
+/* blog list: stack posts vertically, one wide row each */
+.modules--stack { flex-direction: column; gap: 20px; }
+.modules--stack .panel--card { width: 100%; }
+.modules--stack .card { padding: 26px 120px 30px 28px; gap: 12px; }
+.modules--stack .card__art { width: 120px; height: 90px; right: 20px; bottom: 18px; }
+.modules--stack .card__status { font-size: 11px; padding: 5px 10px; }
+.modules--stack .card__desc { font-size: 14px; line-height: 22px; max-width: 820px; }
+
 /* ============ BLOG POST ============ */
 
 .post { padding: 44px 72px 56px; max-width: 900px; margin: 0 auto; }
