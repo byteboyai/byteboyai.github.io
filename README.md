@@ -1,5 +1,7 @@
 Byteboy
 
+Website: https://byteboy.ai
+
 Building the next generation of AI developer tools.
 
 Byteboy is an independent open-source project focused on building native AI tools for developers.

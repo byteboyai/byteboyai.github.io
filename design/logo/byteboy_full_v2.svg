@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 640">
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="eyeglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(0,25)">
+    <!-- body -->
+    <g filter="url(#glow)" fill="none" stroke="#35E0F0" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+      <!-- arms -->
+      <rect x="152" y="330" width="42" height="100" rx="21" transform="rotate(10 173 380)"/>
+      <rect x="318" y="330" width="42" height="100" rx="21" transform="rotate(-10 339 380)"/>
+      <!-- fists -->
+      <rect x="136" y="428" width="50" height="46" rx="15" transform="rotate(10 161 451)"/>
+      <rect x="326" y="428" width="50" height="46" rx="15" transform="rotate(-10 351 451)"/>
+      <!-- legs -->
+      <rect x="206" y="430" width="44" height="66" rx="18"/>
+      <rect x="262" y="430" width="44" height="66" rx="18"/>
+      <!-- boots -->
+      <rect x="190" y="488" width="60" height="40" rx="13"/>
+      <rect x="262" y="488" width="60" height="40" rx="13"/>
+      <!-- torso -->
+      <rect x="196" y="322" width="120" height="110" rx="22"/>
+      <!-- chest vent -->
+      <path d="M 228 352 L 242 378 L 270 378 L 284 352"/>
+    </g>
+
+    <!-- head (scaled from head logo, drawn over torso) -->
+    <g transform="translate(71.68,0) scale(0.72)">
+      <g filter="url(#glow)" fill="none" stroke="#35E0F0" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="82" y="222" width="26" height="118" rx="13" transform="rotate(-6 95 281)"/>
+        <rect x="404" y="222" width="26" height="118" rx="13" transform="rotate(6 417 281)"/>
+        <path d="M 196 434
+                 C 140 408 104 344 104 262
+                 C 104 136 172 82 256 82
+                 C 340 82 408 136 408 262
+                 C 408 344 372 408 316 434
+                 Q 256 456 196 434 Z"/>
+        <path d="M 204 116 L 232 158 L 280 158 L 308 116"/>
+        <path d="M 166 348 L 206 406 L 306 406 L 346 348"/>
+      </g>
+      <g filter="url(#eyeglow)" fill="#FFC93C">
+        <path d="M 154 238
+                 L 240 276
+                 Q 246 316 214 322
+                 Q 158 322 146 270
+                 Q 144 248 154 238 Z"/>
+        <path d="M 358 238
+                 L 272 276
+                 Q 266 316 298 322
+                 Q 354 322 366 270
+                 Q 368 248 358 238 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

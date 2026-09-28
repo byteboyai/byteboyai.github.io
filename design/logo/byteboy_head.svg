@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="eyeglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)" fill="none" stroke="#35E0F0" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <!-- antenna -->
+    <line x1="256" y1="96" x2="256" y2="62"/>
+    <!-- ear pods -->
+    <rect x="88" y="206" width="38" height="104" rx="17"/>
+    <rect x="386" y="206" width="38" height="104" rx="17"/>
+    <!-- helmet -->
+    <path d="M 126 356 L 126 196 Q 126 96 226 96 L 286 96 Q 386 96 386 196 L 386 356 Q 386 396 346 396 L 166 396 Q 126 396 126 356 Z"/>
+    <!-- visor -->
+    <rect x="160" y="180" width="192" height="104" rx="36"/>
+    <!-- chin vent -->
+    <rect x="222" y="328" width="68" height="15" rx="7.5"/>
+  </g>
+
+  <g filter="url(#eyeglow)">
+    <circle cx="256" cy="48" r="13" fill="#FFC93C"/>
+    <rect x="186" y="209" width="46" height="46" rx="12" fill="#FFC93C"/>
+    <rect x="280" y="209" width="46" height="46" rx="12" fill="#FFC93C"/>
+  </g>
+</svg>

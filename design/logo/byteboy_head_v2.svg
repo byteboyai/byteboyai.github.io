@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="eyeglow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)" fill="none" stroke="#35E0F0" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+    <!-- ear pods -->
+    <rect x="82" y="222" width="26" height="118" rx="13" transform="rotate(-6 95 281)"/>
+    <rect x="404" y="222" width="26" height="118" rx="13" transform="rotate(6 417 281)"/>
+    <!-- helmet -->
+    <path d="M 196 434
+             C 140 408 104 344 104 262
+             C 104 136 172 82 256 82
+             C 340 82 408 136 408 262
+             C 408 344 372 408 316 434
+             Q 256 456 196 434 Z"/>
+    <!-- crown panel -->
+    <path d="M 204 116 L 232 158 L 280 158 L 308 116"/>
+    <!-- jaw plate -->
+    <path d="M 166 348 L 206 406 L 306 406 L 346 348"/>
+  </g>
+
+  <g filter="url(#eyeglow)" fill="#FFC93C">
+    <path d="M 154 238
+             L 240 276
+             Q 246 316 214 322
+             Q 158 322 146 270
+             Q 144 248 154 238 Z"/>
+    <path d="M 358 238
+             L 272 276
+             Q 266 316 298 322
+             Q 354 322 366 270
+             Q 368 248 358 238 Z"/>
+  </g>
+</svg>

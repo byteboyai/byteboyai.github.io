@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BYTEBOY — Building the next generation of AI developer tools</title>
-  <meta name="description" content="Byteboy is an independent open-source project focused on building native AI tools for developers.">
+  <title>BLOG — BYTEBOY</title>
+  <meta name="description" content="Notes and updates from the Byteboy project.">
   <meta name="theme-color" content="#0a0e16">
 
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://byteboy.ai/">
-  <meta property="og:title" content="BYTEBOY — Building the next generation of AI developer tools">
-  <meta property="og:description" content="Byteboy is an independent open-source project focused on building native AI tools for developers.">
+  <meta property="og:url" content="https://byteboy.ai/blog.html">
+  <meta property="og:title" content="BLOG — BYTEBOY">
+  <meta property="og:description" content="Notes and updates from the Byteboy project.">
   <meta property="og:image" content="https://byteboy.ai/assets/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -74,20 +74,20 @@
   </header>
 
   <!-- ============ BODY ============ -->
-  <main class="page-body" id="home">
+  <main class="page-body" id="blog">
 
-    <!-- HERO -->
-    <section class="hero-wrap" id="about">
+    <!-- PAGE HEADER -->
+    <section class="hero-wrap">
       <div class="panel panel--hero">
         <i class="spin-light" aria-hidden="true"></i>
         <div class="panel__inner">
           <div class="badge" aria-hidden="true">
             <span class="badge__dot"></span>
-            <span class="badge__text">[SYSTEM_STATUS: ONLINE]</span>
+            <span class="badge__text">[LOG_FEED: STREAMING]</span>
           </div>
-          <h1 class="hero__title">Building the next generation of AI developer tools</h1>
-          <p class="hero__desc">Byteboy is an independent open-source project focused on building native AI tools for developers. We believe the future of software development is not another IDE with AI features, but a new generation of AI-native workspaces.</p>
-          <p class="hero__tagline">AGENT-FIRST&nbsp;&nbsp;//&nbsp;&nbsp;WORKSPACE-FIRST&nbsp;&nbsp;//&nbsp;&nbsp;NATIVE-FIRST</p>
+          <h1 class="hero__title">Blog</h1>
+          <p class="hero__desc">Notes, release logs, and engineering updates from the Byteboy project.</p>
+          <p class="hero__tagline">BUILD&nbsp;&nbsp;//&nbsp;&nbsp;BREAK&nbsp;&nbsp;//&nbsp;&nbsp;SHIP</p>
 
           <!-- HUD decorations -->
           <i class="br br--tl hero-br-tl" aria-hidden="true"></i>
@@ -104,52 +104,8 @@
       </div>
     </section>
 
-    <!-- CORE MODULES -->
-    <section class="modules" id="product">
-
-      <article class="panel panel--card">
-        <i class="spin-light" aria-hidden="true"></i>
-        <div class="panel__inner card">
-          <img class="card__art" src="assets/dozer.png" alt="" width="288" height="168">
-          <h2 class="card__title">Dozer</h2>
-          <div class="card__status card__status--active">STATUS: ACTIVE</div>
-          <p class="card__desc">The AI Workspace for Builders. A native workspace designed for the agent era. Orchestrates agents, terminals, and resources.</p>
-          <i class="br br--tl card-br" aria-hidden="true"></i>
-          <span class="hud-label card-mod" aria-hidden="true">MOD_01</span>
-          <svg class="corner-accents card-corner" width="28" height="28" aria-hidden="true"><use href="#card-corner-accents"/></svg>
-          <div class="cells" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
-        </div>
-      </article>
-
-      <article class="panel panel--card">
-        <i class="spin-light" aria-hidden="true"></i>
-        <div class="panel__inner card">
-          <img class="card__art" src="assets/digger.png" alt="" width="288" height="240">
-          <h2 class="card__title">Digger</h2>
-          <div class="card__status card__status--indev">STATUS: IN_DEV</div>
-          <p class="card__desc">An AI-powered research workspace for collecting, organizing, and understanding technical knowledge.</p>
-          <i class="br br--tl card-br" aria-hidden="true"></i>
-          <span class="hud-label card-mod" aria-hidden="true">MOD_02</span>
-          <svg class="corner-accents card-corner" width="28" height="28" aria-hidden="true"><use href="#card-corner-accents"/></svg>
-          <div class="cells" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
-        </div>
-      </article>
-
-      <article class="panel panel--card">
-        <i class="spin-light" aria-hidden="true"></i>
-        <div class="panel__inner card">
-          <img class="card__art" src="assets/truck.png" alt="" width="288" height="138">
-          <h2 class="card__title">Truck</h2>
-          <div class="card__status card__status--planning">STATUS: PLANNING</div>
-          <p class="card__desc">An automation workspace for AI workflows, long-running tasks, and multi-agent orchestration.</p>
-          <i class="br br--tl card-br" aria-hidden="true"></i>
-          <span class="hud-label card-mod" aria-hidden="true">MOD_03</span>
-          <svg class="corner-accents card-corner" width="28" height="28" aria-hidden="true"><use href="#card-corner-accents"/></svg>
-          <div class="cells" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
-        </div>
-      </article>
-
-    </section>
+    <!-- POSTS (rendered from blog/posts.json) -->
+    <section class="modules" id="postList"></section>
   </main>
 
   <!-- ============ FOOTER ============ -->
@@ -173,5 +129,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/blog-list.js"></script>
 </body>
 </html>

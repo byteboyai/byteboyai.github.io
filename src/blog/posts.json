@@ -1,0 +1,84 @@
+{
+  "posts": [
+    {
+      "slug": "what-is-vibe-coding",
+      "title": "What Is Vibe Coding?",
+      "date": "2026-03-01",
+      "tag": "PRIMER",
+      "status": "active",
+      "summary": "The term Andrej Karpathy coined in February 2025, what it actually means, and why it spread so fast."
+    },
+    {
+      "slug": "origin-story-karpathy-tweet",
+      "title": "The Origin Story: Karpathy's Tweet That Named a Movement",
+      "date": "2026-03-03",
+      "tag": "HISTORY",
+      "status": "active",
+      "summary": "The two-paragraph post that named a movement, and the two-year thread of ideas behind it."
+    },
+    {
+      "slug": "vibe-coding-toolbox",
+      "title": "The Vibe Coding Toolbox: Editors, Agents, and Platforms",
+      "date": "2026-03-05",
+      "tag": "TOOLS",
+      "status": "active",
+      "summary": "Editors, browser builders, and terminal agents — how the landscape splits and how to choose."
+    },
+    {
+      "slug": "prompting-and-context",
+      "title": "Prompting and Context: The Real Skill of Vibe Coding",
+      "date": "2026-03-08",
+      "tag": "PRACTICE",
+      "status": "active",
+      "summary": "Prompting is a surface skill. Context engineering is the durable one. The five kinds of context that matter."
+    },
+    {
+      "slug": "when-to-vibe-code",
+      "title": "When to Vibe Code and When Not To",
+      "date": "2026-03-10",
+      "tag": "JUDGMENT",
+      "status": "indev",
+      "summary": "Green light, red light, and the gray zone in between — the most important vibe coding skill."
+    },
+    {
+      "slug": "security-debt",
+      "title": "Security Debt: The Hidden Cost of Vibe Coding",
+      "date": "2026-03-13",
+      "tag": "SECURITY",
+      "status": "planning",
+      "summary": "Hardcoded secrets, injection flaws, and the evidence that generated code is getting more functional — not more secure."
+    },
+    {
+      "slug": "technical-debt-hangover",
+      "title": "Technical Debt and the \"Vibe Coding Hangover\"",
+      "date": "2026-03-16",
+      "tag": "MAINTAINABILITY",
+      "status": "planning",
+      "summary": "Refactoring is collapsing, duplication is exploding, and senior engineers are starting to feel the hangover."
+    },
+    {
+      "slug": "productivity-paradox",
+      "title": "The Productivity Paradox: Faster or Slower?",
+      "date": "2026-03-19",
+      "tag": "RESEARCH",
+      "status": "indev",
+      "summary": "METR's randomized trial found AI made experienced developers 19% slower — while they believed they were faster."
+    },
+    {
+      "slug": "vibe-coding-open-source",
+      "title": "Vibe Coding and Open Source: A Growing Tension",
+      "date": "2026-03-22",
+      "tag": "ECOSYSTEM",
+      "status": "planning",
+      "summary": "\"Vibe Coding Kills Open Source,\" the Eternal September, and the rsync episode — the economics of attention."
+    },
+    {
+      "slug": "agentic-engineering",
+      "title": "From Vibe Coding to Agentic Engineering",
+      "date": "2026-03-25",
+      "tag": "FUTURE",
+      "status": "active",
+      "summary": "Karpathy declared vibe coding passé in 2026. What replaces it, and the skills that matter now."
+    }
+  ]
+}
